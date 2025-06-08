@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Emilio Test';
+  src: url('/fonts/EmilioTest.ttf') format('truetype'); /* Make sure the font is correctly placed in public/fonts/ */
+}
+
+.custom-header {
+  color: #56060D;
+  font-weight: 700; /* Removed incorrect 'px' */
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  margin-bottom: 20px;
+}
+
+.custom-paragraph {
+  color: #3f4041;
+  max-width: 808px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .custom-header {
+    font-size: 36px;
+  }
+
+  .custom-paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-header {
+    font-size: 28px;
+  }
+
+  .custom-paragraph {
+    font-size: 14px;
+  }
+}

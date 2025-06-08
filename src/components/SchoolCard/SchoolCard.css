@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.school-card {
+  width: 260px;
+  height: 290px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  position: relative;
+  /* margin-left: 10px; */
+  margin: 10px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.school-card img.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  filter: brightness(70%);
+}
+
+.card-footer-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  padding: 12px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-text {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.explore-btn {
+  width: 100px;
+  height: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  /* font-weight: 500; */
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.explore-btn .arrow {
+  font-size: 11px;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.explore-btn:hover .arrow {
+  transform: scale(1.2);
+}
+
+.school-card:hover img.card-img {
+  transform: scale(1.08);
+}
+
+.school-card:hover .explore-btn .arrow {
+  transform: scale(1.3);
+  color: #ffffff; 
+}

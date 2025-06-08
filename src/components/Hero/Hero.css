@@ -1,0 +1,153 @@
+#hero {
+  
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  padding: 0 20px; 
+}
+
+/* Pause Icon */
+.hero-pause {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Text Area */
+.hero-text {
+  position: absolute;
+  top: 250px;
+  left: 125px;
+  line-height: 40px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  line-height: 80px;
+  margin: 0;
+}
+
+.hero-text p {
+  line-height: 100px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Contact Button */
+.btn-contect {
+  color: white;
+  background-color: #560010;
+  outline: none;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contect:hover {
+  background-color: #7b0015;
+}
+
+/* Custom Underline for "University" */
+.below-underline {
+  position: relative;
+  display: inline-block;
+  font-family: "Georgia", serif;
+  font-size: 80px;
+  color: white;
+  z-index: 1;
+}
+
+.below-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 80%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 20px;
+  background-color: #560010;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+/* =========================
+   Responsive (Max 991px)
+   ========================= */
+@media (max-width: 991px) {
+  #hero {
+    flex-direction: column;
+    padding: 20px 15px;
+    min-height: auto;
+  }
+
+  .hero-pause {
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .hero-text {
+    position: static;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .below-underline {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn-contect {
+    font-size: 14px;
+    padding: 8px 22px;
+  }
+}
+
+/* =========================
+   Extra Small Devices (Max 576px)
+   ========================= */
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .below-underline {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .btn-contect {
+    font-size: 13px;
+    padding: 6px 18px;
+  }
+
+  .hero-pause {
+    font-size: 26px;
+  }
+}
+
+
+
+ 

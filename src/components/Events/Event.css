@@ -1,0 +1,128 @@
+.event-bg {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #e6cfcf 0%,
+    #e6cfcf 50%,
+    white 50%,
+    white 100%
+  );
+  padding: 60px 125px;
+  box-sizing: border-box;
+}
+
+.seeall {
+  float: right;
+  color: #560010;
+  font-size: 18px;
+}
+
+.event-heading {
+  color: #560010;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+
+.event-para {
+  color: #8b5962;
+  font-size: 20px;
+}
+
+.content {
+  margin-top: 20px;
+  /* width: 100%;
+  width: 396px; */
+  height: 311px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.content:hover {
+  transform: scale(1.01);
+}
+
+.text {
+  color: white;
+  font-family: "Georgia", serif;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.box {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  background-color: #560010;
+  color: white;
+  font-family: "Georgia", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.box-hover {
+  background-color: transparent;
+  color: #560010;
+  font-size: 28px;
+}
+
+.arrow-icon {
+  color: #560010;
+  font-size: 28px;
+}
+
+/* Meet container styles */
+.meet-container {
+  margin-top: 50px;
+}
+
+.meet-content {
+  width: 100%;
+  max-width: 396px;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.meet-box {
+  width: 120px;
+  height: 60px;
+  background-color: #560010;
+  color: white;
+  text-align: center;
+  margin-right: 18px;
+  padding: 7px 16px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet-heading {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.meet-heading:hover {
+  text-decoration: underline;
+}
+
+.meet-para {
+  font-size: 19px;
+  color: gray;
+}

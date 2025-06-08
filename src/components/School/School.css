@@ -1,0 +1,28 @@
+.background-split {
+  min-height: 100vh;
+  background: linear-gradient(to top, #ffffff 50%, #E6CFCF 50%);
+  padding: 60px 125px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive padding */
+@media (max-width: 992px) {
+  .background-split {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-split {
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-split {
+    padding: 20px 15px;
+  }
+}
+
+

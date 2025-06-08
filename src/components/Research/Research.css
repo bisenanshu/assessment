@@ -1,0 +1,42 @@
+.innovation-container{
+    margin: 80px 125px;
+}
+
+.innovation-container h1{
+     color: #560010;
+     font-family: "Georgia", serif;
+     margin-bottom: 50px;
+}
+.card-box{
+    width: 400px;
+    
+}
+.card-contents{
+    position: relative;
+}
+.quality-text{
+    background-color: #560010;
+    color: white;
+     font-family: "Georgia", serif;
+     font-size: 20px;
+     padding: 12px;
+     margin-top: 20px;
+     position: absolute;
+     bottom: -20px;
+     left: 380px;
+    width: 500px;
+ text-align: center;
+}
+
+.research-parsent{
+  margin-top: 50px;
+  
+}
+
+.parsent1 h1{
+margin-bottom: 0px;
+}
+
+.vartical{
+    border: 2px solid gray;
+}
