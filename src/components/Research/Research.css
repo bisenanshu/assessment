@@ -1,42 +1,169 @@
-.innovation-container{
-    margin: 80px 125px;
+
+
+.innovation-container {
+  margin: 80px 125px;
 }
 
-.innovation-container h1{
-     color: #560010;
-     font-family: "Georgia", serif;
-     margin-bottom: 50px;
-}
-.card-box{
-    width: 400px;
-    
-}
-.card-contents{
-    position: relative;
-}
-.quality-text{
-    background-color: #560010;
-    color: white;
-     font-family: "Georgia", serif;
-     font-size: 20px;
-     padding: 12px;
-     margin-top: 20px;
-     position: absolute;
-     bottom: -20px;
-     left: 380px;
-    width: 500px;
- text-align: center;
+.innovation-container h1 {
+  color: #560010;
+  font-family: "Georgia", serif;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.research-parsent{
+.card-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.card-box {
+  flex: 1 1 300px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.quality-text {
+  background-color: #560010;
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  padding: 12px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transform: none;
+}
+
+/* ===================== Responsive Counter Section =================== */
+.research-parsent {
   margin-top: 50px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.parsent1 h1{
-margin-bottom: 0px;
+.parsent1 {
+  text-align: center;
+  flex: 1 1 200px;
+  min-width: 150px;
 }
 
-.vartical{
-    border: 2px solid gray;
+.parsent1 h1 {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
 }
+
+.vartical {
+  display: none;
+}
+
+/* ===================== Tablets and above ===================== */
+@media (min-width: 768px) {
+  .card-contents {
+    justify-content: space-between;
+  }
+
+  .quality-text {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .research-parsent {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .parsent1 {
+    flex: none;
+    width: 30%;
+  }
+
+  .vartical {
+    display: block;
+    border-left: 2px solid gray;
+    height: 60px;
+    align-self: center;
+  }
+
+  .parsent1 h1 {
+    font-size: 2rem;
+  }
+
+  .quality-text {
+    font-size: 20px;
+  }
+}
+
+/* =============== Very small devices (Smartwatches, old phones) ============== */
+@media (max-width: 360px) {
+  .innovation-container {
+    margin: 40px 15px;
+  }
+
+  .innovation-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .parsent1 h1 {
+    font-size: 1.2rem;
+  }
+
+  .quality-text {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.quality-text {
+  background-color: #560010;
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+
+  /* Default: no absolute positioning on small devices */
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: auto;
+  left: auto;
+  transform: none;
+}
+
+/* On medium and large screens, position absolutely and center horizontally */
+@media (min-width: 768px) {
+  .quality-text {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+  }
+}
+
