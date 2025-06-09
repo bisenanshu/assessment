@@ -63,8 +63,8 @@ export function Header() {
       </div>
 
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg px-3 nav-top">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg px-3 nav-top" >
+        <div className="container-fluid" >
           <a className="navbar-brand" href="#">
             <img src={vitlogo} alt="VIT Logo" width="140" />
           </a>
@@ -73,6 +73,7 @@ export function Header() {
             type="button"
             onClick={handleToggle}
             aria-expanded={isMenuOpen}
+            style={{color:'white', border:'2px solid white'}}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
